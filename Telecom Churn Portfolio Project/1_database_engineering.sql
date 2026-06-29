@@ -1,3 +1,15 @@
+----- QUERY 1 -----
+CREATE DATABASE IF NOT EXISTS retail_db;
+USE retail_db;
+
+CREATE TABLE IF NOT EXISTS retail_master (
+    order_id VARCHAR(20) PRIMARY KEY, order_date DATE, category VARCHAR(50), 
+    sub_category VARCHAR(50), region VARCHAR(50), supply_chain_status VARCHAR(50),
+    quantity INT, unit_cost DECIMAL(10,2), unit_price DECIMAL(10,2), 
+    discount_pct DECIMAL(4,2), inventory_days INT
+);
+
+----- QUERY 2 -----
 USE telecom_db;
 SET SQL_SAFE_UPDATES = 0;
 
